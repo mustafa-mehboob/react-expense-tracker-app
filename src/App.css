@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 400px;
+  min-height: 450px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 15px 50px;
+  background: whitesmoke;
+  box-shadow: 0 0 10px gray;
+}
+
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.expence-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.expence-container > div {
+  flex: 1;
+  text-align: center;
+}
+.expence-container> div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.e-income{
+  color: #2da3ad;
+  font-weight: bold;
+}
+.e-expence {
+  color: #a52a2a;
+  font-weight: bold;
+}
+
+.t-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.t-list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.t-list li.e-positive {
+  border-right: 5px solid #008000;
+}
+
+.t-list li.e-positive:hover {
+  border-right: 5px solid #008000;
+  background-color: #008000;
+  color: #f7f7f7
+}
+
+.t-list li.e-negative {
+  border-right: 5px solid #a52a2a;
+}
+.t-list li.e-negative:hover {
+  border-right: 5px solid #a52a2a;
+  background-color: #a52a2a;
+  color: #f7f7f7
+}
+
+
+.delete {
+  cursor: pointer;
+  background-color: #8a6a66;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.t-list li:hover .delete {
+  opacity: 1;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.add-button {
+  cursor: pointer;
+  background-color: lightsteelblue;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.add-button:focus,
+.delete:focus {
+  outline: 5px;
+}
