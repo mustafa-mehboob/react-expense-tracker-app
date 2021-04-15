@@ -38,6 +38,6 @@ jobs:
       run: npm install --global surge
 
     - name: Deploy to Surge
-      run: surge  ./  react-expense-tracker-app-by-mustafa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge  ./ react-expense-tracker-app-by-mustafa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
     
