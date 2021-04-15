@@ -39,5 +39,3 @@ jobs:
 
     - name: Deploy to Surge
       run: surge  ./ react-expense-tracker-app-by-ghulam-mustafa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
-
-    
