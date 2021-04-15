@@ -37,6 +37,6 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run Surge
-        run: surge  ./  react-expense-tracker-app-mustafa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge  ./  react-expense-tracker-app-by-mustafa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
     
